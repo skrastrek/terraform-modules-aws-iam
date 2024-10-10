@@ -1,1 +1,1 @@
-# terraform-modules-aws-iam-policy-document
+# terraform-modules-aws-iam
