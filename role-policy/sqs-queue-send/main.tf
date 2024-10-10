@@ -5,7 +5,7 @@ resource "aws_iam_role_policy" "this" {
 }
 
 module "policy_document" {
-  source = "../../policy-documents/sqs-queue-send"
+  source = "../../policy-document/sqs-queue-send"
 
   sqs_queue_arn         = var.sqs_queue_arn
   sqs_queue_kms_key_arn = var.sqs_queue_kms_key_arn
