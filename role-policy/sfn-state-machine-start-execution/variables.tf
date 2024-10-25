@@ -4,9 +4,9 @@ variable "role_name" {
 
 variable "policy_name" {
   type    = string
-  default = "cloudwatch-logs-write"
+  default = "invoke-http-endpoint"
 }
 
-variable "log_group_arn" {
+variable "sfn_state_machine_arn" {
   type = string
 }
