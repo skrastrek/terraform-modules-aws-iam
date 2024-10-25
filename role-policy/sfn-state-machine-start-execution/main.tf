@@ -5,7 +5,7 @@ resource "aws_iam_role_policy" "this" {
 }
 
 module "policy_document" {
-  source     = "../../policy-document/secretsmanager-secret-read"
+  source = "../../policy-document/sfn-state-machine-start-execution"
 
-  secret_arn = var.secret_arn
+  sfn_state_machine_arn = var.sfn_state_machine_arn
 }

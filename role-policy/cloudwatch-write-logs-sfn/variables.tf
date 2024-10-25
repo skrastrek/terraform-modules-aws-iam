@@ -6,7 +6,3 @@ variable "policy_name" {
   type    = string
   default = "cloudwatch-logs-write"
 }
-
-variable "log_group_arn" {
-  type = string
-}
