@@ -3,7 +3,8 @@ variable "role_name" {
 }
 
 variable "policy_name" {
-  type = string
+  type    = string
+  default = "sqs-queue-send"
 }
 
 variable "sqs_queue_arn" {

@@ -3,7 +3,8 @@ variable "role_name" {
 }
 
 variable "policy_name" {
-  type = string
+  type    = string
+  default = "secretsmanager-secret-read"
 }
 
 variable "secret_arn" {
