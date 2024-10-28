@@ -5,7 +5,7 @@ resource "aws_iam_role_policy" "this" {
 }
 
 module "policy_document" {
-  source     = "../../policy-document/secretsmanager-secret-read"
+  source = "../../policy-document/secretsmanager-secret-read"
 
   secret_arn = var.secret_arn
 }
